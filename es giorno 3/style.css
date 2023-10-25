@@ -1,0 +1,62 @@
+html {
+    font-family: georgia 'Times New Roman', Times, serif;
+}
+div {
+    width: 33%;
+}
+body {
+    font: 0.8em georgia;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header {
+    text-align: center;
+}
+header p {
+    border-top: 2px;
+    border-color: bisque;
+    background-color: bisque;
+}
+span {
+    text-transform: uppercase;
+    color: rgb(9, 94, 65);
+}
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+picture img {
+    border-radius: 6px;
+    width: 100%;
+}
+picture caption {
+    align-self: center;
+    color: gray;
+}
+section {
+    border-left: 2px;
+    border-color: bisque;
+}
+section p {
+    text-transform: uppercase;
+    color: red;
+}
+section a {
+    color: rgb(9, 94, 65);
+}
+hr {
+    color: rgb(9, 94, 65);
+}
+h2 {
+    text-transform: capitalize;
+}
+h3::first-letter {
+    text-transform: uppercase;
+}
+
+p a{
+    color: rgb(9, 94, 65);
+}
