@@ -110,8 +110,8 @@ console.log("Fine es 6");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n1= 9;
-let n2= 8;
-let n3= 9;
+let n2= 0;
+let n3= 7;
 let a = [];
 if (n1 >= n2) {
   if (n2 >= n3) {
@@ -130,7 +130,24 @@ if (n1 >= n2) {
 }else {
   console.log(n3 + ", " + n2 + ", " + n1);
 }
+
+
+let arry= [n1, n2, n3];
+
+if (arry[2]>=arry[0] && arry[0]>=arry[1]){
+  arry=[n3, n1, n2];
+} else if (arry[2]>=arry[0] && arry[1]>=arry[0]){
+  arry=[n3, n2, n1];
+} else if (arry[1]>=arry[0] && arry[0]>=arry[2]){
+  arry=[n2, n1, n3];
+} else if (arry[1]>=arry[0] && arry[2]>=arry[0]){
+  arry=[n2, n3, n1];
+} else {
+  arry=[n1, n3, n2];
+}
+console.log(arry);
 console.log("fine es 7");
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
