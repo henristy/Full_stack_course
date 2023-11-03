@@ -104,7 +104,6 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
   Crea una variabile chiamata "characters" e assegnale un array vuoto
 */
-
 let characters=[];
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
@@ -195,13 +194,13 @@ console.log("fine es 6");
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
-if (crewMass >= 1000) {
+if (crewMass > 1000) {
   console.log ("DANGER! OVERLOAD ALERT: escape from ship now!");
-}else if (crewMass >= 900) {
+} else if (crewMass > 900) {
   console.log("Critical Load: Over 900");
-  }else if (crewMass >= 700) {
+  }else if (crewMass > 700) {
     console.log("Warning: Load is over 700");
-  }else if (crewMass >= 500) {
+  }else if (crewMass > 500) {
     console.log("Ship is loaded");
   }else {
     console.log("Ship is under loaded");
@@ -211,16 +210,14 @@ console.log("fine es 7");
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
-let newSWChar= [];
+
 // newSWChar = Object.assign(starWarsCharacters);
 for(let i=0; i < starWarsCharacters.length; i++) {
-  
   if (starWarsCharacters[i].gender == "n/a") {
-      starWarsCharacters[i].gender = "robot";
+    starWarsCharacters[i].gender = "robot";
   }
-  newSWChar.push(starWarsCharacters[i]);
 }
-console.log(newSWChar);
+console.log(starWarsCharacters);
 
 console.log("fine es 8");
 
@@ -229,18 +226,16 @@ console.log("fine es 8");
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
-let newChar = [];
+console.log("Numero di personaggi prima: " + characters.length);
 
 for(let j=0; j< characters.length; j++) {
-  newChar.push(characters[j]);
   for(let i=0; i< femaleCharacters.length; i++) {
     if (femaleCharacters[i].name == characters[j]) {
-      newChar.pop(characters[j]);
+      characters.pop(characters[j]);
     }
   }
-  
 }
-console.log ("Numero di personaggi prima: " + characters.length + " e dopo: " + newChar.length);
+console.log("e dopo: " + characters.length);
 
 console.log("fine es 9");
 
