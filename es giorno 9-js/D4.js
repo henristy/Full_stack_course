@@ -170,8 +170,32 @@ console.log("fine es 9");
         RandomNumbers.push(Math.round(Math.random()*10));
         c++;
     }
-    console.log(RandomNumbers);
+    return RandomNumbers;
  }
- giveMeRandom(n2);
+ console.log(giveMeRandom(n2));
 
  console.log("fine es 10");
+
+
+
+ function matrixGenerator(x , y) {
+    let mtx= [];
+    let fd = 0, sd = 0, el = 0;
+    for (let i = 0; i < (x*y); i++) { 
+        if (sd >= x) {
+            fd++;
+            sd = 0; 
+            el = fd+ "" + sd;
+            mtx.push(el);
+        }else {   
+            el = fd + "" + sd;
+            mtx.push(el);
+        }
+        sd++;    
+    }
+    console.log(mtx);
+ }
+
+
+ matrixGenerator(6, 6);
+
