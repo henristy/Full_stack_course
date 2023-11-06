@@ -116,8 +116,6 @@ function loopUntil(rand) {
             c=0;
         }
         rand = Math.round(Math.random()*10);
-        
-
     } 
 }
 let loop=Math.round(Math.random());
@@ -139,7 +137,7 @@ function average (arr) {
     return sum / c;
 }
 
-average(array1);
+console.log(average(array1));
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */

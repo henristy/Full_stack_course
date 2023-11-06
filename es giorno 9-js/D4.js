@@ -14,7 +14,7 @@ console.log("Dati inseriti: ", n1, n2, CP );
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let Arect =area = (l1, l2) => console.log("Area del rectangolo è " + l1*l2);
+area = (l1, l2) => console.log("Area del rectangolo è " + l1*l2);
 area(n1, n2);
 
 console.log("fine es 1");
@@ -152,7 +152,7 @@ console.log("fine es 8");
 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let taglia = cutString = (x) => console.log(x.slice(1,(x.length-1)));
+cutString = (x) => console.log(x.slice(1,(x.length-1)));
 
 cutString(CP);
 
@@ -177,37 +177,37 @@ console.log("fine es 9");
  console.log("fine es 10");
 
 
- function matrixGenerator(x , y) {
-    let mtx= [];
-    let fd = 0, sd = 0, el = 0;
-    for (let i = 0; i < (x*y); i++) { 
-        if (sd >= x) {
-            fd++;
-            sd = 0; 
-            el = fd+ "" + sd;
-            mtx.push(el);
-        }else {   
-            el = fd + "" + sd;
-            mtx.push(el);
-        }
-        sd++;    
-    }
-    console.log(mtx);
- }
+//  function matrixGenerator(x , y) {
+//     let mtx= [];
+//     let fd = 0, sd = 0, el = 0;
+//     for (let i = 0; i < (x*y); i++) { 
+//         if (sd >= x) {
+//             fd++;
+//             sd = 0; 
+//             el = fd+ "" + sd;
+//             mtx.push(el);
+//         }else {   
+//             el = fd + "" + sd;
+//             mtx.push(el);
+//         }
+//         sd++;    
+//     }
+//     console.log(mtx);
+//  }
 
 
- matrixGenerator(4,2);
+//  matrixGenerator(14,23);
 
- function matrixGenerator1(x, y){
-    let mtx1=[];
-    for (let i = 0; i < y; i++) {
-        let rowArr =[];
-        for (let j = 0; j < x; j++) {
-            rowArr.push(i+""+j);
-        }
-        mtx1.push(rowArr);
-    }
-    console.log(mtx1);
-}
+//  function matrixGenerator1(x, y){
+//     let mtx1=[];
+//     for (let i = 0; i < y; i++) {
+//         let rowArr =[];
+//         for (let j = 0; j < x; j++) {
+//             rowArr.push(i+""+j);
+//         }
+//         mtx1.push(rowArr);
+//     }
+//     console.log(mtx1);
+// }
 
-matrixGenerator1(4,2);
+// matrixGenerator1(14,23);
