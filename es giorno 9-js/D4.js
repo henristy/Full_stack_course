@@ -177,7 +177,6 @@ console.log("fine es 9");
  console.log("fine es 10");
 
 
-
  function matrixGenerator(x , y) {
     let mtx= [];
     let fd = 0, sd = 0, el = 0;
@@ -197,5 +196,18 @@ console.log("fine es 9");
  }
 
 
- matrixGenerator(6, 6);
+ matrixGenerator(4,2);
 
+ function matrixGenerator1(x, y){
+    let mtx1=[];
+    for (let i = 0; i < y; i++) {
+        let rowArr =[];
+        for (let j = 0; j < x; j++) {
+            rowArr.push(i+""+j);
+        }
+        mtx1.push(rowArr);
+    }
+    console.log(mtx1);
+}
+
+matrixGenerator1(4,2);

@@ -197,23 +197,16 @@ daysGone(Data);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function matrixGenerator(a , b) {
-    let mtx= [];
-    let fd = 0, sd = 0, el = 0;
-    for (let i = 0; i < (x*y); i++) { 
-        if (sd >= x) {
-            fd++;
-            sd = 0; 
-            el = fd+ "" + sd;
-            mtx.push(el);
-        }else {   
-            el = fd + "" + sd;
-            mtx.push(el);
+function matrixGenerator1(x, y){
+    let mtx1=[];
+    for (let i = 0; i < y; i++) {
+        let rowArr =[];
+        for (let j = 0; j < x; j++) {
+            rowArr.push(i+""+j);
         }
-        sd++;    
+        mtx1.push(rowArr);
     }
-    console.log(mtx);
- }
+    console.log(mtx1);
+}
 
-
- matrixGenerator(x, y);
+matrixGenerator1(x,y);
