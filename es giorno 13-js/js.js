@@ -1,17 +1,18 @@
 const taskArea= document.createElement('div');
-taskArea.id ='taskArea';
 const ul= document.createElement('ul');
+taskArea.id ='taskArea';
 let bigBtn = document.querySelector('form > button');
 
+
 bigBtn.addEventListener('click', () => {
-    if (document.querySelector('input').value) {
+    if (document.querySelector('input').value.trim().length) {
         const taskline= document.createElement('div');
         taskline.className = 'taskline';
+
         let li = document.createElement('li');
         li.className = 'task' ;
-        li.innerText = document.querySelector('input').value;
-
-        li.addEventListener('click', () => li.style.textDecoration = 'line-through');
+        li.innerText = document.querySelector('input').value.toUpperCase();
+        li.addEventListener('click', () => li.classList.toggle('completed'));
 
         let delLi = document.createElement('button');
         delLi.innerText = 'Delete';
@@ -27,7 +28,8 @@ bigBtn.addEventListener('click', () => {
         document.querySelector('input').value='';
         document.querySelector('input').placeholder = "inserici un'altro task";
     }else {
-        document.querySelector('input').placeholder = "Devi prima inserire un task";
+        document.querySelector('input').value='';
+        document.querySelector('input').placeholder = "Devi prima scrivere un task";
     }
 })
 

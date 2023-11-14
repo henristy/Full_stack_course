@@ -15,7 +15,7 @@ h1 {
     margin-bottom: 5vh;
 }
 #formArea form input, #formArea button {
-    font-size: 3em;
+    font-size: 2em;
     border-radius: 15px;
 }
 #taskArea {
@@ -38,4 +38,8 @@ h1 {
     display: inline-block;
     font-size: 3em;
     border-radius: 10px;
+    margin: auto 0;
+}
+.completed {
+    text-decoration: line-through;
 }
