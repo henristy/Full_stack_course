@@ -339,7 +339,7 @@ section h2 {
   top: -25px;
   left: 35px;
   text-transform: uppercase;
-  box-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 2px black;
 } 
 
 /* FORM */
