@@ -1,6 +1,6 @@
 body {
     font-size: 1rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;;
     color: #752305;
     font-weight: bold;
     box-sizing: border-box;
@@ -51,13 +51,12 @@ nav > #shop img {
         flex-wrap: nowrap;
         align-items: last baseline;
         justify-content: space-around;
-        gap: 0px;
         width: 100%;
         margin: 0;
         border-radius: 0px;
     }
     nav > a {
-        margin-bottom: initial;
+        margin-bottom: 0;
         width: 18%;
     }
     nav #shop {
@@ -138,8 +137,8 @@ article .desc {
 .desc div h4{
     font-size: 1.3em;
 }
-.desc div a  {
-    opacity: 0.7;
+.desc div p  {
+    opacity: 0.5;
     font-size: 1em;
     margin-top: 3px;
 }
@@ -147,7 +146,7 @@ article .desc {
     font-size: 1.2em;
     text-align: center;
     width: 30%;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .desc button {
     background-color: #ffdf7f;;
@@ -164,7 +163,7 @@ article .desc {
     h1 {
         font-size: 3em;
         text-align: left;
-        margin-left: 1%;
+        margin-left: 30px;
     }
     .some {
         display: flex;
@@ -177,7 +176,7 @@ article .desc {
         width: 48%;
     }
     article .desc {
-        height: 25vh;
+        height: 18vh;
     }
     article:last-child {
         display: none;
@@ -206,7 +205,7 @@ article .desc {
         border-bottom-left-radius: 70px;
         border-bottom-right-radius: 70px;
     }
-    article:nth-child(4), article:last-child {
+    article:nth-child(4) {
         display: none;
     } 
 }
@@ -274,11 +273,11 @@ h2 + div  img {
 @media screen and (min-width:640px) {
     h2 {
         text-align: left;
-        margin-left: 20px ;
+        margin-left: 30px ;
         font-size: 2.5em;
     }
     h2+ div {
-        margin: 20px;
+        margin: 30px;
     }
     h2 + div h3 {
         font-size: 2em;
