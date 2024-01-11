@@ -1,0 +1,12 @@
+
+$font: 1.3em;
+$fweight: 'bold';
+
+
+@mixin big-title($fweight, $fsize) {
+    font-size: $fsize;
+    font-weight: $fweight;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $big-title-color;
+}
+

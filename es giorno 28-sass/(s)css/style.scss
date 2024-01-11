@@ -1,0 +1,121 @@
+@import '_reset';
+@import '_font';
+@import '_colori';
+@import '_bottoni';
+@import '_spaziature';
+@import '_mixin generici';
+@import '_animazioni';
+
+
+
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    @include big-title($fweight, $font * 6);
+}
+h2 {
+    @include big-title($fweight, $font  + 0.7);
+}
+ a, p, button {
+    font-size: $font + 0.3;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include bg-text-colors(color, $nav-bg-color);
+    padding: 2px 5%;
+
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            @include btns ('none', 5px, 3px);
+        }
+
+        li a {
+            text-decoration: none;
+            @include bg-text-colors('color', $nav-bg-color);
+        }
+    }
+}
+
+
+header {
+    > div {
+        margin-top: 20px;
+        display: flex;
+        height: 1200px;
+        background-color: $hero-background-color;
+    }
+
+    > div div:first-child {
+        flex: 1 0 48%;
+        padding: 150px 10px 0 80px;
+        @include animations (fade-in, 1s, ease-out,  0, 1);
+    }
+}
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+button {
+    display: inline-block;
+    transition: transform 200ms linear;
+    border-radius: 10px;
+    &:hover {
+        transform: scale(10px, 5px);
+    }
+    &:first-of-type {
+        @include btns ($btn1-bg-color,3px , 5px);
+    }
+    &:nth-of-type(2) {
+        @include btns ($btn2-bg-color, 3px , 5px);
+    }
+    &:last-of-type {
+        @include btns ($btn3-bg-color,3px , 5px);
+    }
+}
+
+
+
+header img {
+    height: 1300px;
+    width: 100%;
+   
+    @include floating;
+    border-radius: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    @include animations(fromTop, 1s, ease-out, 0, 1) ;
+}
+
+@keyframes fromTop {
+    from {transform: translateY(-200px);}
+    to {transform: translateY(0px);}
+}
+
+main {
+    > div{
+        margin-top:  150px ;
+        @include grid(3);
+    
+        div {
+            border: none;
+
+            img {
+                width: 100%;
+                @include floating;
+                overflow: hidden;
+            }
+        }
+    }
+}

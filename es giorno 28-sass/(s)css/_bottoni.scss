@@ -1,0 +1,7 @@
+
+@mixin btns ($color, $padd, $margin) {
+    background-color: $color;
+    padding: $padd;
+    margin-left: $margin;
+}
+

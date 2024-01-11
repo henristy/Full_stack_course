@@ -1,0 +1,19 @@
+
+$text-color: #f4f4f4;
+
+$big-title-color: whitesmoke;
+
+$nav-bg-color: aquamarine;
+
+$hero-background-color: #604fc5;
+
+$btn1-bg-color: #ff8700;
+
+$btn2-bg-color:  #0e6cff;
+
+$btn3-bg-color: #4caf50;
+
+@mixin bg-text-colors ($prop, $value) {
+    background-#{$prop}: $value;
+    #{$prop}: darken($value, 30%);
+}

@@ -1,0 +1,7 @@
+@mixin animations ($nome, $durata, $funzione, $delay, $ripetizione) {
+    animation-name: $nome;
+    animation-duration: $durata;
+    animation-timing-function: $funzione;
+    animation-delay: $delay;
+    animation-iteration-count: $ripetizione;
+}

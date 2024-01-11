@@ -1,0 +1,18 @@
+@mixin floating {
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px black;
+    border: 2px solid white;
+}
+
+@mixin grid($num-column) {
+    display: grid;
+    $col: 23%;
+    @for $i from 0 to $num-column {
+        $col:$col 23% ;
+    }
+    grid-template-columns: $col;
+    justify-content: space-evenly;
+}
+
+
+

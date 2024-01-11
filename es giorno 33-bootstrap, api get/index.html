@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="position-fixed p-2 bg-gradient" style="top: 200px; right: -120px;">
+        <a class="h2 text-success position-relative" data-bs-toggle="offcanvas" href="#carrellocanvas" role="button" aria-controls="carrellocanvas">
+            <i class="bi bi-cart">Carrello</i>
+            <span id="carrelloNum" class="position-absolute top-0 start-0 translate-middle badge rounded-pill fs-6 bg-info">0<span class="visually-hidden">Items in cart</span></span>
+        </a>
+    </div>
+
+    <div id="showHidden" class="position-fixed p-2 bg-gradient" style="top: 200px; left: 0;">
+        <button class="btn btn btn-outline-dark text-white-50" type="button">Show hidden</button>
+    </div>
+    <div class="container">
+        <div id="booksArea" class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3 pt-5 mt-5">   
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="carrellocanvas" aria-labelledby="carrellocanvas">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Items in your CART</h5>
+          <button class="btn btn-lg btn-danger">Remove All</button>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div id="cartArea" class="d-flex flex-column g-3">
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+

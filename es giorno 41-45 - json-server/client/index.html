@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsn server: login, register</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="../../../../bootstrap-5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../bootstrap-5.3.2/js/src/">
+</head>
+<body>
+    <div class=" mt-3">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BAU BAU</a>
+                <button type="button" class="text-end btn btn-primary btn-sm" data-bs-target="#collapseLogin" data-bs-toggle="collapse">Sign in <i class="bi bi-person-circle"></i></button>
+            </div>
+        </nav>
+        <div class="messageArea">
+            <h1 class="fw-bolder text-center">Hi! WELCOME TO BARK RADIO!</h1>
+            <p></p>
+        </div>
+        <div class="inputArea container">
+            <div class="mx-auto w-50 collapse" id="collapseLogin"> 
+                <form>            
+                    <div class="form-floating">
+                    <input type="email" class="form-control w-100" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                    </div>
+                
+                    <div class="form-check text-start my-3">
+                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Remember me
+                    </label>
+                    </div>
+                    <button class="btn btn-primary py-2" type="button" id="login">Log in</button>
+                    <span>Or <button type="button" class="btn btn-outline-primary my-3" data-bs-target="#collapseRegister" data-bs-target="#collapseLogin" data-bs-toggle="collapse" aria-controls="#collapseRegister #collapseLogin">Register</button> Now! </span>
+                </form>
+                <form class="form-floating collapse" id="collapseRegister">
+                    <input class="form-control form-control-lg" type="text" placeholder="name" aria-label="name">
+                    <input class="form-control form-control-lg" type="text" placeholder="surname" aria-label="surname">
+                    <input class="form-control form-control-lg" type="text" placeholder="city" aria-label="city">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="email">
+                        <label for="floatingEmail">Email</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                </form>
+            </div>            
+            </div>
+           
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+            <button type="button" class="btn btn-outline-primary" data-bs-target="#collapseGet" data-bs-toggle="collapse">Get</button>
+            <form class="collapse" id="collapseGet">
+                <input type="number" placeholder="id number?">
+                <button type="button" class="btn btn-primary" id="get">Get</button>
+            </form>
+            <button type="button" class="btn btn-outline-primary" data-bs-target="#collapseCreate" data-bs-toggle="collapse">create</button>
+            <form class="collapse" id="collapseCreate">
+                <input type="text" id="name" placeholder="name..." required>
+                <input type="text" id="surname" placeholder="surname..." required>
+                <input type="text" id="city" placeholder="city..." required>
+                <input type="email" id="email" placeholder="email..." required>
+                <input type="password" id="password" placeholder="password" required> 
+                <button type="button" class="btn btn-primary" id="create">Create</button>
+            </form>
+            <button type="button" class="btn btn-outline-primary" data-bs-target="#collapseModify" data-bs-toggle="collapse">Modify</button>
+            <form class="collapse" id="collapseModify">
+                <input type="text" id="name" placeholder="name..." required>
+                <input type="text" id="surname" placeholder="surname..." required>
+                <input type="text" id="city" placeholder="city..." required>
+                <input type="email" id="email" placeholder="email..." required>
+                <input type="password" id="password" placeholder="password" required> 
+                <button type="button" class="btn btn-primary" id="Modify">Create</button>
+            </form>
+            <button type="button" class="btn btn-outline-primary" data-bs-target="#modalDelete" data-bs-toggle="modal">delete</button>
+            <div class="modal  fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title">Delete User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+
+            <button type="button" class="btn btn-outline-primary" data-bs-target="#collapseLogin" data-bs-toggle="collapse">login</button>
+            <form class="collapse" id="collapseModify">
+                <input type="email" id="email" placeholder="email..." required>
+                <input type="password" id="password" placeholder="password" required> 
+                <button type="button" class="btn btn-primary" id="login">Log In</button>
+            </form>
+        </div> -->
+
+          
+    </div>
+    
+    <script src="../../../../bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
