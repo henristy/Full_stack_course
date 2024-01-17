@@ -6,12 +6,11 @@ export default class MessageError extends Component {
     state = {
         msgerr: this.props.errormsg,
     }
-    componentWillUnmount() {
+    componentDidMount() {
         this.setState({msgerr: ''})
     }
 
     render() {
-        console.log(this.state.msgerr);
         return (
            
             <Alert variant = 'warning'>

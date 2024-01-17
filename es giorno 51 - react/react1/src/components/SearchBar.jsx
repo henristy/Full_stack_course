@@ -8,7 +8,6 @@ export default class SearchBar extends Component {
 
     handleQuery=(e)=> {
         this.setState({query: e.target.value});
-        return (this.state.query);
     }
 
   render() {
